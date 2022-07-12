@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/*reset*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Vista Mobile*/
+/*GENERAL*/
+#nav{
+    width: 100%;
+    background-color: rgba(143, 171, 183, 0.8);
+    font-family: nunito, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    height: auto
+    padding: 2vh 0;
+    margin-bottom: 2vw;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav__logo{
+    height: 12vh;
+}
+.nav__list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.nav__list--links{
+    color: #042258;
+    text-decoration: none;
+    margin-right: 3vw;
+}
+.PositionFixed{
+    position: fixed;
+}
+.PositionSticky{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.TextCenter{
+    text-align: center;
+}
+h1{
+    font-family: quicksand, sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #3f6633;
+    margin-bottom: 2vh;
+}
+h2{
+    font-family: quicksand, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #3F6633;
+    margin-bottom: 2vh;
+}
+h3{
+    font-family: quicksand, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #3f6633;
+    margin-bottom: 2vh;
+}
+p{
+    font-family: nunito, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 2vh;
+}
+#footer{
+    width: 100%;
+    height: 10vh;
+    margin-top: 4vh;
+    background-color:  rgba(142, 170, 183, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer__icon{
+    height: 6vh;
+    opacity: 0.8;
+    margin-right: 0.8vw;
+}
+/*INDEX*/
+.index__header--img{
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.index__section{
+    width: 100%;
+    height: auto;
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.index__productlines--div{
+    margin: 4vh 0;
+    display: flex;
+    justify-content: center;
+}
+.index__productlines--figure{
+    margin-right: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.index__productlines--img{
+    width: 25vw;
+    height: auto;
+}
+.index__productlines--figcaption{
+    margin-top: 2vh;
+    font-family: nunito, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+    width: 30vw ; 
+}
+.index__clients--div{
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-areas: 
+    "plastimi sauer chodorge"
+    "aguer pr seewald";
+    justify-items: center;
+    align-items: center;
+}
+.clients__plastimi{
+    grid grid-area: plastimi;
+}
+.clients__sauer{
+    grid grid-area: sauer;
+}
+.clients__chodorge{
+    grid grid-area: chodorge;
+}
+.clients__aguer{
+    grid grid-area: aguer;
+}
+.clients__placasrivadavia{
+    grid grid-area: pr;
+}
+.clients_seewald{
+    grid grid-area: seewald;
+}
+.clients__logos{
+    width: 20vw;
+    margin-right: 3vw;
+    height: auto;
+    filter: grayscale(100%);
+}
+/*NOSOTROS*/
+#NosImg{
+    grid-area: nosimg;
+    width: 70vw;
+    height: auto;
+    padding: 2vh 0;
+}
+#Historia{
+    grid-area: historia;
+}
+#ServProd{
+    grid-area: servprod;
+}
+.structure__nosotros{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "nosimg"
+    "historia"
+    "servprod"; 
+    justify-items: center;
+    align-items: center;
+}
+.nosotros__text{
+    width: 85%;
+    padding: 2vh 3vw;
+}
+/*PRODUCTOS*/
+#ProdList{
+    grid-area: products;
+    width: 90vw;
+    height: auto;
+    padding: 0 3vw;
+    margin: 3vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#ProdFilters{
+    grid-area: filters;
+    height: auto;
+    padding: 0vh 15vw;
+    margin: 5vh 0;
+}
+.structure__products{  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "filters"
+    "products";
+    justify-items: center;
+    align-items: center;
+}
+.products__figure{
+    width: 70vw;
+    max-width: 400px;    
+    height: auto;
+    padding: 3vh 3vw;
+    margin: 1.5vh 0;
+    border: #8eaab7b3 solid 0.1em;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.products__figure--img{
+    width: 50vw;
+    max-width: 300px;
+}
+.products__figure--figcaption{
+    font-family: nunito, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 2vh;;
+    text-align: center;
+    height: 55px;
+}
+/*GALERIA*/
+#Photo1{
+    grid-area: photo1;
+}
+#Photo2{
+    grid-area: photo2;
+}
+#Photo3{
+    grid-area: photo3;
+}
+#Photo4{
+    grid-area: photo4;
+}
+#Photo5{
+    grid-area: photo5;
+}
+#Photo6{
+    grid-area: photo6;
+}
+#Photo7{
+    grid-area: photo7;
+}
+#Photo8{
+    grid-area: photo8;
+}
+#Photo9{
+    grid-area: photo9;
+}
+#Photo10{
+    grid-area: photo10;
+}
+#Photo11{
+    grid-area: photo11;
+}
+#Photo12{
+    grid-area: photo12;
+}
+#Photo13{
+    grid-area: photo13;
+}
+#Photo14{
+    grid-area: photo14;
+}
+#Photo15{
+    grid-area: photo15;
+}
+.structure__galery{
+    width: 100%;
+    padding: 0 3vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 2vh;
+    grid-template-areas:
+    "photo1"
+    "photo2"
+    "photo3"
+    "photo4"
+    "photo5"
+    "photo6"
+    "photo7"
+    "photo8"
+    "photo9"
+    "photo10"
+    "photo11"
+    "photo12"
+    "photo13"
+    "photo14"
+    "photo15";
+}
+.box__img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.box__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+/*CONTACTO*/
+form{
+    font-family: nunito, sans-serif;
+    font size: 1rem;
+    font-weight: 300;
+}
+.SmallText{
+    font-size: 1rem;
+}
+#Form{
+    grid-area: form;
+    margin: 2vh 4vw;
+}
+#Datos{
+    grid-area: datos;
+    margin: 2vh 4vw;
+}
+.structure__contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "form"
+    "datos";
+}
+.structure__form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    margin-bottom: 0.5vh;
+}
+form input{
+    margin-bottom: 0.5vh;
+}
+form fieldset{
+    margin-top: 0.5vh;
+}
+textarea{
+    width: 100%;
+    border: none;
+}
+form button{
+    width: 20%;
+    margin-top: 1.5vh;
+    align-self: center;
+}
+form button input{
+    font-family: nunito, sans-serif;
+    font size: 1rem;
+    color: #042258;
+    font-weight: 700;
+    border:none;
+}
+.structure__datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Map{
+    margin-bottom: 3vh;
+}
+.contact__icon{
+    width: 5vw;
+    max-width: 30px;
+    margin-bottom: 0.5vh;
+}
+
+/*Vista Tablet*/
+@media (min-width: 768px){
+    /*GENERAL*/
+    #nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav__logo{
+        margin-left: 2vw;
+    }
+    .nav__list{
+        margin-right: 2vw;
+    }
+    .nav__list--links{
+        margin-right: 2vw;
+    }
+    /*INDEX*/
+    .index__productlines--img{
+        max-width: 192px;
+        height: auto;
+    }
+    .index__clients--div{
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-areas: 
+        "plastimi sauer chodorge aguer pr seewald";
+    }
+    .clients__logos{
+        width: 13vw;
+        max-width: 240px;
+    }
+    /*NOSOTROS ---> sin cambios*/
+    /*PRODUCTOS*/
+    #ProdList{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .products__figure{
+        width: 40vw;
+        padding: 0;
+        margin-bottom: 1vh;
+    }
+    .products__figure--img{
+        width: 30vw;
+        max-width: 300px;
+    }
+    /*GALERIA*/
+    .structure__galery{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(8,300px);
+        column-gap: 2vw;
+        row-gap: 3vh;
+        grid-template-areas:
+        "photo1 photo2"
+        "photo3 photo4"
+        "photo5 photo6"
+        "photo7 photo8"
+        "photo9 photo10"
+        "photo11 photo12"
+        "photo13 photo14"
+        "photo15 none";
+        justify-items: center;
+        align-items: center;
+    }
+    /*CONTACTO*/
+    .structure__form{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+/*Vista Desktop*/
+@media (min-width: 1024px){
+    /*GENERAL ---> sin cambios*/
+    /*INDEX ---> sin cambios*/
+    /*NOSOTROS*/
+    .structure__nosotros{
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "nosimg historia"
+        "nosimg servprod";
+    }
+    #NosImg{
+        width: 90%;
+        height: auto;
+        padding-left: 1.5vw;
+    }
+    .nosotros__text{
+        width: 80%;
+        height: auto;
+        padding: 2vh 1vw;
+    }
+    /*PRODUCTOS*/
+    #ProdFilters{
+        padding: 0;
+        margin: 0;
+    }
+    #ProdList{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+    }
+    .structure__products{  
+        grid-template-columns: 20% 80%;
+        grid-template-areas:
+        "filters products";
+    }
+    .products__figure{
+        width: 28%;
+        margin-right: 1.5vw;
+    }
+    .products__figure--img{
+        width: 15vw;
+    }
+    .BorderNone{
+        border: none;
+    }
+    /*GALERIA*/
+    .structure__galery{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(9,400px);
+        column-gap: 1.5vw;
+        grid-template-areas:
+        "photo1 photo1 photo2"
+        "photo1 photo1 photo3"
+        "photo4 photo4 photo4"
+        "photo5 photo5 photo5"
+        "photo6 photo6 photo7"
+        "photo8 photo9 photo9"
+        "photo10 photo10 photo11"
+        "photo12 photo12 photo12"
+        "photo13 photo14 photo15";
+    }
+    /*CONTACTO*/
+    form label{
+        margin-bottom: 1vh;
+    }
+    form input{
+        margin-bottom: 1vh;
+    }
+    form fieldset{
+        margin-top: 1vh;
+    }
+    form button{
+        margin-top: 3vh;
+    }
+    .structure__contacto{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+        "form datos";
+    }
+    .structure__form{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
