@@ -24,7 +24,7 @@
     align-items: center;
 }
 .nav__logo{
-    height: 12vh;
+   height: 12vh;
 }
 .nav__list{
     list-style: none;
@@ -35,6 +35,37 @@
     color: #042258;
     text-decoration: none;
     margin-right: 3vw;
+}
+@keyframes animateNavLinks{
+    0%{
+        color:042258;
+        font-weight: 400; 
+        background: linear-gradient(#3f6633,#3f6633); 
+        background-position: 0 100%; 
+        background-repeat: no-repeat; 
+        background-size: 0% 2px
+    }
+    100%{
+        color:#3f6633;
+        font-weight: 700; 
+        background: linear-gradient(#3f6633,#3f6633); 
+        background-position: 0 100%; 
+        background-repeat: no-repeat; 
+        background-size: 100% 2px
+    }
+}
+.nav__list--links:hover{
+    animation-name: animateNavLinks;
+    animation-duration: 0.5s;
+    background: linear-gradient(#3f6633,#3f6633); 
+    background-position: 0 100%; 
+    background-repeat: no-repeat;
+    color: #3f6633; 
+    font-weight: 700;
+    background-size: 100% 2px;
+}
+.nav__current{
+    font-weight: 700;
 }
 .PositionFixed{
     position: fixed;
@@ -158,6 +189,10 @@ p{
     height: auto;
     filter: grayscale(100%);
 }
+.clients__logos:hover{
+    filter: grayscale(0%);
+    transition: filter 2s;
+}
 /*NOSOTROS*/
 #NosImg{
     grid-area: nosimg;
@@ -229,6 +264,11 @@ p{
 .products__figure--img{
     width: 50vw;
     max-width: 300px;
+}
+.products__figure--img:hover{
+    transform: scale(1.2);
+    transition: transform 1s;
+    cursor:pointer;
 }
 .products__figure--figcaption{
     font-family: nunito, sans-serif;
@@ -311,13 +351,11 @@ p{
 .box__img{
     width: 100%;
     height: 100%;
-    overflow: hidden;
 }
 .box__img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    overflow: hidden;
 }
 /*CONTACTO*/
 form{
@@ -366,13 +404,24 @@ form button{
     width: 20%;
     margin-top: 1.5vh;
     align-self: center;
+    background: linear-gradient(to top,#8fabb7,#042258);
+    border: none;
+    border-radius: 4px;
+}
+form button:hover{
+    background: linear-gradient(to bottom,#8fabb7,#042258); 
+    box-shadow: -7px 7px 7px -4px #080808;
+    cursor:pointer;
+    transition: all 0.3s;
 }
 form button input{
     font-family: nunito, sans-serif;
-    font size: 1rem;
-    color: #042258;
+    font size: 2rem;
+    color: white;
     font-weight: 700;
     border:none;
+    background: none;
+    padding: 1vh 0 0.5vh 0;
 }
 .structure__datos{
     display: flex;
@@ -387,7 +436,6 @@ form button input{
     max-width: 30px;
     margin-bottom: 0.5vh;
 }
-
 /*Vista Tablet*/
 @media (min-width: 768px){
     /*GENERAL*/
@@ -428,7 +476,7 @@ form button input{
         flex-wrap: wrap;
     }
     .products__figure{
-        width: 40vw;
+        width: 45vw;
         padding: 0;
         margin-bottom: 1vh;
     }
@@ -458,6 +506,9 @@ form button input{
     .structure__form{
         max-width: 600px;
         margin: 0 auto;
+    }
+    .beneficios__animate{
+        height: 60vh;
     }
 }
 
@@ -549,6 +600,9 @@ form button input{
     }
     .structure__form{
         width: 100%;
+    }
+    .beneficios__animate{
+        height: 85vh;
     }
 }
 
