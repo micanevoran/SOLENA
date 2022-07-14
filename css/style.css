@@ -15,7 +15,7 @@
     font-family: nunito, sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    height: auto
+    height: auto;
     padding: 2vh 0;
     margin-bottom: 2vw;
     z-index: 1000;
@@ -166,22 +166,22 @@ p{
     align-items: center;
 }
 .clients__plastimi{
-    grid grid-area: plastimi;
+    grid-area: plastimi;
 }
 .clients__sauer{
-    grid grid-area: sauer;
+    grid-area: sauer;
 }
 .clients__chodorge{
-    grid grid-area: chodorge;
+    grid-area: chodorge;
 }
 .clients__aguer{
-    grid grid-area: aguer;
+    grid-area: aguer;
 }
 .clients__placasrivadavia{
-    grid grid-area: pr;
+    grid-area: pr;
 }
 .clients_seewald{
-    grid grid-area: seewald;
+    grid-area: seewald;
 }
 .clients__logos{
     width: 20vw;
@@ -360,7 +360,7 @@ p{
 /*CONTACTO*/
 form{
     font-family: nunito, sans-serif;
-    font size: 1rem;
+    font-size: 1rem;
     font-weight: 300;
 }
 .SmallText{
@@ -416,7 +416,7 @@ form button:hover{
 }
 form button input{
     font-family: nunito, sans-serif;
-    font size: 2rem;
+    font-size: 2rem;
     color: white;
     font-weight: 700;
     border:none;
