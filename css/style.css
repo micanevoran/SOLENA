@@ -4,112 +4,61 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 /*Vista Mobile*/
 /*GENERAL*/
 #nav{
-    width: 100%;
-    background-color: rgba(143, 171, 183, 0.8);
+    background-color:#88b4a4e6;
     font-family: nunito, sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
-    height: auto;
-    padding: 2vh 0;
-    margin-bottom: 2vw;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+}
+#nav ul li a{
+    color: #346727;
 }
 .nav__logo{
-   height: 12vh;
-}
-.nav__list{
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-.nav__list--links{
-    color: #042258;
-    text-decoration: none;
-    margin-right: 3vw;
+   height: 11vh;
 }
 @keyframes animateNavLinks{
     0%{
         color:042258;
-        font-weight: 400; 
-        background: linear-gradient(#3f6633,#3f6633); 
-        background-position: 0 100%; 
+        background: linear-gradient(#346727,#346727); 
+        background-position: 0 80%; 
         background-repeat: no-repeat; 
         background-size: 0% 2px
     }
     100%{
         color:#3f6633;
-        font-weight: 700; 
-        background: linear-gradient(#3f6633,#3f6633); 
-        background-position: 0 100%; 
+        background: linear-gradient(#346727,#346727); 
+        background-position: 0 80%; 
         background-repeat: no-repeat; 
         background-size: 100% 2px
     }
 }
-.nav__list--links:hover{
+#nav .nav-item:hover{
     animation-name: animateNavLinks;
     animation-duration: 0.5s;
     background: linear-gradient(#3f6633,#3f6633); 
-    background-position: 0 100%; 
+    background-position: 0 80%; 
     background-repeat: no-repeat;
-    color: #3f6633; 
-    font-weight: 700;
+    color: #346727; 
     background-size: 100% 2px;
 }
-.nav__current{
-    font-weight: 700;
-}
-.PositionFixed{
-    position: fixed;
-}
-.PositionSticky{
-    position: sticky;
-    top: 0;
-    left: 0;
-}
-.TextCenter{
-    text-align: center;
-}
-h1{
+h1, h2, h3, h4, h5, h6{
     font-family: quicksand, sans-serif;
-    font-size: 1.7rem;
-    font-weight: 500;
-    color: #3f6633;
-    margin-bottom: 2vh;
-}
-h2{
-    font-family: quicksand, sans-serif;
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #3F6633;
-    margin-bottom: 2vh;
-}
-h3{
-    font-family: quicksand, sans-serif;
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: #3f6633;
-    margin-bottom: 2vh;
+    font-weight: 600;
+    color: #184E77;
 }
 p{
     font-family: nunito, sans-serif;
-    font-size: 1.3rem;
     font-weight: 300;
-    margin-bottom: 2vh;
+    color: #022440;
 }
 #footer{
     width: 100%;
     height: 10vh;
-    margin-top: 4vh;
-    background-color:  rgba(142, 170, 183, 0.8);
+    background-color: #88b4a4e6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,85 +69,45 @@ p{
     margin-right: 0.8vw;
 }
 /*INDEX*/
-.index__header--img{
-    width: 100%;
-    top: 0;
-    left: 0;
-}
-.index__section{
-    width: 100%;
+.index__productlines--card{
+    width: 23vw;
     height: auto;
-    margin-top: 4vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    border: none;
 }
-.index__productlines--div{
-    margin: 4vh 0;
-    display: flex;
-    justify-content: center;
-}
-.index__productlines--figure{
-    margin-right: 2vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.index__productlines--img{
-    width: 25vw;
-    height: auto;
-}
-.index__productlines--figcaption{
-    margin-top: 2vh;
+.card__productlines--btn{
     font-family: nunito, sans-serif;
-    font-size: 1.1rem;
-    font-weight: 400;
-    text-align: center;
-    width: 30vw ; 
+    color: white;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(to bottom, #76C893,#52B69A);
 }
-.index__clients--div{
-    display: grid;
-    grid-template-columns: 2;
-    grid-template-areas: 
-    "plastimi sauer chodorge"
-    "aguer pr seewald";
-    justify-items: center;
-    align-items: center;
+.card__productlines--btn a{
+    color: white;
 }
-.clients__plastimi{
-    grid-area: plastimi;
+.card__productlines--btn:hover{
+    font-family: nunito, sans-serif;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(to bottom, #52B69A,#76C893);
 }
-.clients__sauer{
-    grid-area: sauer;
-}
-.clients__chodorge{
-    grid-area: chodorge;
-}
-.clients__aguer{
-    grid-area: aguer;
-}
-.clients__placasrivadavia{
-    grid-area: pr;
-}
-.clients_seewald{
-    grid-area: seewald;
+.card__productlines--btn a:hover{
+    color: #022440;
 }
 .clients__logos{
-    width: 20vw;
-    margin-right: 3vw;
-    height: auto;
+    width: 14vw;
     filter: grayscale(100%);
 }
 .clients__logos:hover{
     filter: grayscale(0%);
     transition: filter 2s;
+    cursor: pointer;
 }
 /*NOSOTROS*/
 #NosImg{
     grid-area: nosimg;
     width: 70vw;
     height: auto;
-    padding: 2vh 0;
 }
 #Historia{
     grid-area: historia;
@@ -217,26 +126,19 @@ p{
     justify-items: center;
     align-items: center;
 }
-.nosotros__text{
+.nosotros__article{
     width: 85%;
-    padding: 2vh 3vw;
 }
 /*PRODUCTOS*/
+#ProdFilters{
+    grid-area: filters;
+    font-family: nunito, sans-serif;
+}
 #ProdList{
     grid-area: products;
-    width: 90vw;
-    height: auto;
-    padding: 0 3vw;
-    margin: 3vh 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-#ProdFilters{
-    grid-area: filters;
-    height: auto;
-    padding: 0vh 15vw;
-    margin: 5vh 0;
 }
 .structure__products{  
     display: grid;
@@ -244,12 +146,25 @@ p{
     grid-template-rows: auto;
     grid-template-areas:
     "filters"
-    "products";
-    justify-items: center;
-    align-items: center;
+    "products"; 
+}
+.products__search--btn{
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(to bottom, #76C893,#52B69A);
+}
+.products__search--btn:hover{
+    background: linear-gradient(to bottom,#8fabb7,#042258); 
+    box-shadow: -7px 7px 7px -4px #080808;
+    cursor:pointer;
+    transition: all 0.3s;
+}
+.products__search--btn img{
+    height: 3.5vh;
+    width: auto;
 }
 .products__figure{
-    width: 70vw;
+    width: 90%;
     max-width: 400px;    
     height: auto;
     padding: 3vh 3vw;
@@ -260,6 +175,9 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.BorderNone{
+    border: none;
 }
 .products__figure--img{
     width: 50vw;
@@ -272,7 +190,7 @@ p{
 }
 .products__figure--figcaption{
     font-family: nunito, sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
     margin-top: 2vh;;
     text-align: center;
@@ -363,16 +281,11 @@ form{
     font-size: 1rem;
     font-weight: 300;
 }
-.SmallText{
-    font-size: 1rem;
-}
 #Form{
     grid-area: form;
-    margin: 2vh 4vw;
 }
 #Datos{
     grid-area: datos;
-    margin: 2vh 4vw;
 }
 .structure__contacto{
     display: grid;
@@ -387,87 +300,41 @@ form{
     display: flex;
     flex-direction: column;
 }
-form label{
-    margin-bottom: 0.5vh;
-}
-form input{
-    margin-bottom: 0.5vh;
-}
-form fieldset{
-    margin-top: 0.5vh;
-}
-textarea{
-    width: 100%;
-    border: none;
-}
-form button{
-    width: 20%;
-    margin-top: 1.5vh;
+.contact__send--btn{
     align-self: center;
-    background: linear-gradient(to top,#8fabb7,#042258);
+    color: white;
+    border-radius: 5px;
     border: none;
-    border-radius: 4px;
+    background: linear-gradient(to bottom, #76C893,#52B69A);
 }
-form button:hover{
+.contact__send--btn:hover{
     background: linear-gradient(to bottom,#8fabb7,#042258); 
     box-shadow: -7px 7px 7px -4px #080808;
+    color: white;
     cursor:pointer;
     transition: all 0.3s;
-}
-form button input{
-    font-family: nunito, sans-serif;
-    font-size: 2rem;
-    color: white;
-    font-weight: 700;
-    border:none;
-    background: none;
-    padding: 1vh 0 0.5vh 0;
 }
 .structure__datos{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.Map{
-    margin-bottom: 3vh;
-}
 .contact__icon{
     width: 5vw;
     max-width: 30px;
     margin-bottom: 0.5vh;
 }
+.datos__div{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
 /*Vista Tablet*/
 @media (min-width: 768px){
     /*GENERAL*/
-    #nav{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .nav__logo{
-        margin-left: 2vw;
-    }
-    .nav__list{
-        margin-right: 2vw;
-    }
-    .nav__list--links{
-        margin-right: 2vw;
-    }
     /*INDEX*/
-    .index__productlines--img{
-        max-width: 192px;
-        height: auto;
-    }
-    .index__clients--div{
-        display: grid;
-        grid-template-columns: 1;
-        grid-template-areas: 
-        "plastimi sauer chodorge aguer pr seewald";
-    }
-    .clients__logos{
-        width: 13vw;
-        max-width: 240px;
-    }
-    /*NOSOTROS ---> sin cambios*/
+    /*NOSOTROS*/
     /*PRODUCTOS*/
     #ProdList{
         flex-direction: row;
@@ -476,9 +343,7 @@ form button input{
         flex-wrap: wrap;
     }
     .products__figure{
-        width: 45vw;
-        padding: 0;
-        margin-bottom: 1vh;
+        width: 45%;
     }
     .products__figure--img{
         width: 30vw;
@@ -507,18 +372,15 @@ form button input{
         max-width: 600px;
         margin: 0 auto;
     }
-    .beneficios__animate{
-        height: 60vh;
-    }
 }
 
 /*Vista Desktop*/
 @media (min-width: 1024px){
-    /*GENERAL ---> sin cambios*/
-    /*INDEX ---> sin cambios*/
+    /*GENERAL*/
+    /*INDEX*/
     /*NOSOTROS*/
     .structure__nosotros{
-        grid-template-columns: 40% 60%;
+        grid-template-columns: 1fr 2fr;
         grid-template-rows: auto;
         grid-template-areas:
         "nosimg historia"
@@ -529,23 +391,9 @@ form button input{
         height: auto;
         padding-left: 1.5vw;
     }
-    .nosotros__text{
-        width: 80%;
-        height: auto;
-        padding: 2vh 1vw;
-    }
     /*PRODUCTOS*/
-    #ProdFilters{
-        padding: 0;
-        margin: 0;
-    }
     #ProdList{
-        flex-direction: row;
         justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 0;
-        margin: 0;
     }
     .structure__products{  
         grid-template-columns: 20% 80%;
@@ -553,14 +401,11 @@ form button input{
         "filters products";
     }
     .products__figure{
-        width: 28%;
+        width: 30%;
         margin-right: 1.5vw;
     }
     .products__figure--img{
         width: 15vw;
-    }
-    .BorderNone{
-        border: none;
     }
     /*GALERIA*/
     .structure__galery{
@@ -579,18 +424,6 @@ form button input{
         "photo13 photo14 photo15";
     }
     /*CONTACTO*/
-    form label{
-        margin-bottom: 1vh;
-    }
-    form input{
-        margin-bottom: 1vh;
-    }
-    form fieldset{
-        margin-top: 1vh;
-    }
-    form button{
-        margin-top: 3vh;
-    }
     .structure__contacto{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -598,11 +431,8 @@ form button input{
         grid-template-areas:
         "form datos";
     }
-    .structure__form{
-        width: 100%;
-    }
-    .beneficios__animate{
-        height: 85vh;
+    .datos__div{
+        flex-direction: row;
     }
 }
 

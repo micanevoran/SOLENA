@@ -6,62 +6,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOLENA - Soluciones Energéticas Ambientales</title>
     <link rel="shortcut icon" href="img/icons/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    	
-    <nav id=nav class="PositionFixed">
-        <a href="index.html">
-            <img src="img/Logo.png" alt="SOLENA" class="nav__logo">
-        </a>
-        <ul class="nav__list">
-            <li>
-                <a href="nosotros.html" class="nav__list--links">NOSOTROS</a>
-            </li>
-            <li>
-                <a href="productos.html" class="nav__list--links">PRODUCTOS</a>
-            </li>
-            <li>
-                <a href="galeria.html" class="nav__list--links">GALERÍA</a>
-            </li>
-            <li>
-                <a href="contacto.html" class="nav__list--links">CONTACTO</a>
-            </li>
-        </ul>
+    
+    <!--Inicio de la Nav-->
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand m-0 p-0" href="index.html">
+                <img src="img/Logo.png" alt="SOLENA" class="nav__logo m-0 p-0">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="productos.html">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeria.html">GALERÍA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
+    <!--Fin de la Nav-->
+    
+    <!--Inicio del Header-->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/slider1.jpg" class="d-block w-100" alt="Imagen de Portada 1">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slider2.jpg" class="d-block w-100" alt="Imagen de Portada 2">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slider3.jpg" class="d-block w-100" alt="Imagen de Portada 3">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slider4.jpg" class="d-block w-100" alt="Imagen de Portada 4">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slider5.jpg" class="d-block w-100" alt="Imagen de Portada 5">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slider6.jpg" class="d-block w-100" alt="Imagen de Portada 6">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slider7.jpg" class="d-block w-100" alt="Imagen de Portada 7">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slider8.jpg" class="d-block w-100" alt="Imagen de Portada 8">
+          </div>
+          <div class="carousel-item">
+            <img src="img/slider9.jpg" class="d-block w-100" alt="Imagen de Portada 9">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!--Fin del Header-->
 
-    <header>
-        <img src="img/portadaa.jpg" alt="imagen de portada"  class="index__header--img">
-    </header>
-   
-    <section class="index__section">
-        <h2 class="TextCenter">NUESTRAS LÍNEAS DE PRODUCTOS</h2>
-        <div class="index__productlines--div">
-            <figure class="index__productlines--figure">
-                <img src="img/icons/solar-fotovoltaica.png" alt="Energía Solar Fotovoltaica" class="index__productlines--img">
-                <figcaption class=index__productlines--figcaption>Energía Solar Fotovoltaica</figcaption>
-            </figure>
-            <figure class="index__productlines--figure">
-                <img src="img/icons/solar-termica.png" alt="Energía Solar Térmica" class="index__productlines--img">
-                <figcaption class=index__productlines--figcaption>Energía Solar Térmica</figcaption>
-            </figure>
+    <!--Inicio Presentación Líneas de Productos-->
+    <section class="container-fluid mt-5">
+        <h2 class="text-center fs-2 my-2">Nuestras Líneas de Productos</h2>
+        <div class="d-flex justify-content-center">
+            <div class="card text-center index__productlines--card">
+                <img src="img/icons/solar-fotovoltaica.png" class="card-img-top p-3" alt="Línea Solar Fotovoltaica">
+                <div class="card-body">
+                    <h5 class="card-title fs-6">Energía Solar Fotovoltaica</h5>
+                    <button class="card__productlines--btn">
+                        <a href="#" class="btn">Ver Productos</a>
+                    </button>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <div class="card text-center index__productlines--card">
+                    <img src="img/icons/solar-termica.png" class="card-img-top p-3" alt="Línea Solar Térmica">
+                    <div class="card-body">
+                        <h5 class="card-title fs-6">Energía Solar Térmica</h5>
+                        <button class="card__productlines--btn">
+                            <a href="#" class="btn">Ver Productos</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    <!--Fin Presentación Líneas de Productos-->
 
-	<section class="index__section">    
-        <h2 class="TextCenter">NUESTROS CLIENTES</h2>
-        <div class="index__clients--div">
-            <img src="img/clients/plastimi.png" alt="Plastimi" class="clients__plastimi clients__logos">
-            <img src="img/clients/sauer.png" alt="Aserradero Sauer" class="clients__sauer clients__logos">
-			<img src="img/clients/chodorge.png" alt="Laharrague-Chodorge" class="clients__chodorge clients__logos">
-			<img src="img/clients/aguer.png" alt="Aguer Maderas" class="index__clients--img clients__logos">
-            <img src="img/clients/placas-rivadavia.png" alt="Placas Rivadavia" class="clients__placasrivadavia clients__logos">
-			<img src="img/clients/seewald.png" alt="Seewald Automotores" class="clients__seewald clients__logos">
+    <!--Inicio Sección Clientes-->
+    <section class="container-fluid mt-5">
+        <h2 class="text-center fs-2 my-2">Nuestros Clientes</h2>
+        <div class="row mx-5 d-flex align-items-center ">
+            <div class="col-sm-4 col-lg-2">
+                <img src="img/clients/plastimi.png" alt="Plastimi" class="clients__logos">
+            </div>
+            <div class="col-sm-4 col-lg-2">
+                <img src="img/clients/sauer.png" alt="Aserradero Sauer" class="clients__logos">
+            </div>
+            <div class="col-sm-4 col-lg-2">
+                <img src="img/clients/chodorge.png" alt="Laharrague-Chodorge" class="clients__logos">
+            </div>
+            <div class="col-sm-4 col-lg-2">
+                <img src="img/clients/aguer.png" alt="Aguer Maderas" class="clients__logos">
+            </div>
+            <div class="col-sm-4 col-lg-2">
+                <img src="img/clients/placas-rivadavia.png" alt="Placas Rivadavia" class="clients__logos">
+            </div>
+            <div class="col-sm-4 col-lg-2">
+                <img src="img/clients/seewald.png" alt="Seewald Automotores" class="clients__logos">
+            </div>
         </div>
     </section>
-
-    <footer id="footer">
+    <!--Fin Sección Clientes-->
+    
+    <!--Inicio Footer-->
+    <footer id="footer" class="mt-5">
         <a href="mailto:enevoran@gmail.com" target="_blank">
             <img src="img/icons/mail.png" alt="contactanos por mail" class="footer__icon">
         </a>
@@ -78,6 +155,9 @@
             <img src="img/icons/linkedin.png" alt="conecta con nosotros en Linkedin" class="footer__icon">
         </a>
     </footer>
-    
+    <!--Fin Footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
