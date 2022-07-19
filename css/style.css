@@ -18,7 +18,7 @@
     color: #346727;
 }
 .nav__logo{
-   height: 11vh;
+   height: 7vh;
 }
 @keyframes animateNavLinks{
     0%{
@@ -70,12 +70,20 @@ p{
 }
 /*INDEX*/
 .index__productlines--card{
-    width: 23vw;
+    width: 30vw;
     height: auto;
     border: none;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.index__productlines--card img{
+    max-width: 230px;
 }
 .card__productlines--btn{
     font-family: nunito, sans-serif;
+    font-size: 1rem;
     color: white;
     border-radius: 5px;
     border: none;
@@ -94,8 +102,10 @@ p{
 .card__productlines--btn a:hover{
     color: #022440;
 }
+.clients__div{
+    width: 30%;
+}
 .clients__logos{
-    width: 14vw;
     filter: grayscale(100%);
 }
 .clients__logos:hover{
@@ -333,7 +343,16 @@ form{
 /*Vista Tablet*/
 @media (min-width: 768px){
     /*GENERAL*/
+    .nav__logo{
+        height: 11vh;
+     }
     /*INDEX*/
+    .index__productlines--card{
+        font-size: 1.2rem;
+    }
+    .card__productlines--btn{
+        font-size: 1.2rem;
+    }
     /*NOSOTROS*/
     /*PRODUCTOS*/
     #ProdList{
@@ -378,6 +397,9 @@ form{
 @media (min-width: 1024px){
     /*GENERAL*/
     /*INDEX*/
+    .clients__div{
+        width: 15%;
+    }
     /*NOSOTROS*/
     .structure__nosotros{
         grid-template-columns: 1fr 2fr;
