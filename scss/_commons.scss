@@ -1,0 +1,66 @@
+#nav{
+    background-color: $mainBg;
+    font-family: $mainFont;
+    font-size: 1.2rem;
+    font-weight: $textRegular;
+    .nav__logo{
+        height: 7vh;
+        @media (min-width: 768px){
+            height: 11vh;;
+        }
+    }
+        .nav__item{
+            &:hover{
+                animation-name: animateNavLinks;
+                animation-duration: 0.5s;
+                background: linear-gradient($darkGreen,$darkGreen);
+                background-position: 0 80%; 
+                background-repeat: no-repeat; 
+                color: $darkGreen;
+                background-size: 100% 2px
+            }
+            a{
+                color: $darkGreen;
+            }
+        }
+}
+@keyframes animateNavLinks{
+    0%{
+        background: linear-gradient($darkGreen,$darkGreen); 
+        background-position: 0 80%; 
+        background-repeat: no-repeat; 
+        background-size: 0% 2px
+    }
+    100%{
+        background: linear-gradient($darkGreen,$darkGreen); 
+        background-position: 0 80%; 
+        background-repeat: no-repeat; 
+        background-size: 100% 2px
+    }
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: $titleFont;
+    font-weight:$textSemiBold;
+    color:$blue;
+}
+p{
+    font-family: $mainFont;
+    font-weight:$textLight;
+    color:$darkBlue;
+}
+#footer{
+    background-color: $mainBg;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .footer__icon{
+        height: 7vh;
+        opacity: 0.8;
+        margin-right: 0.8vw;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}

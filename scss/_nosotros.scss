@@ -1,0 +1,37 @@
+.structure__nosotros{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nosimg"
+    "historia"
+    "servprod";
+    justify-items: center;
+    align-items: center;
+    #NosImg{
+        grid-area: nosimg;
+        width: 70vw;
+        height: auto;
+        @media (min-width: 1024px){
+            width: 90%;
+            height: auto;
+            padding-left: 1.5vw;
+        }
+    }
+    #Historia{
+        grid-area: historia;
+    }
+    #ServProd{
+        grid-area: servprod;
+    }
+    .nosotros__article{
+        width: 85%;
+    }
+    @media (min-width: 1024px){
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "nosimg historia"
+        "nosimg servprod";
+    }
+}
