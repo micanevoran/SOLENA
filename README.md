@@ -8,6 +8,6 @@ SASS II
 - Definí en _comons.scss una clase base para todos los botones y la extendí en los botones de las productlines en el index (index.html), el botón de "search" de los filtros de los productos (productos.html) y en el botón de "enviar" del formulario de contacto (contacto.html).
 
 SEO
-- Agregué de meta description, meta keywords y meta author en todos los html
+- Agregué meta description, meta keywords y meta author en todos los html
 - Agregué heading h1 para el index, que no lo tenía. 
 - Modifiqué todos los textos alternativos de las imágenes para que sean lo más descriptivos posibles. 
