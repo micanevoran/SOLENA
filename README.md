@@ -9,5 +9,5 @@ SASS II
 
 SEO
 - Agregué de meta description, meta keywords y meta author en todos los html
-- Agregué de <h1> para el index, que no lo tenía. 
+- Agregué heading h1 para el index, que no lo tenía. 
 - Modifiqué todos los textos alternativos de las imágenes para que sean lo más descriptivos posibles. 
