@@ -1,6 +1,6 @@
 .structure__galery{
     width: 100%;
-    padding: 0 3vw;
+    padding: 0 3vw; 
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -75,7 +75,7 @@
             object-fit: cover;
         }
     }
-    @media (min-width: 768px){
+    @include medias (tablet){
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: repeat(8,300px);
         column-gap: 2vw;
@@ -92,7 +92,7 @@
         justify-items: center;
         align-items: center;
     }
-    @media (min-width: 1024px){
+    @include medias (desktop){
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: repeat(9,400px);
         column-gap: 1.5vw;

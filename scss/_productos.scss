@@ -9,15 +9,7 @@
         grid-area: filters;
         font-family: $mainFont;
         .products__search--btn{
-            border-radius: 5px;
-            border: none;
-            background: linear-gradient(to bottom, $lightGreen, $aqua);
-            &:hover{
-                background: linear-gradient(to bottom, $mainBg, $darkBlue);
-                box-shadow: -7px 7px 7px -4px $black;
-                cursor: pointer;
-                transition: all .3s;
-            }
+            @extend .button;
             img{
                 height: 3.5vh;
                 width: auto;
@@ -34,7 +26,7 @@
             max-width: 400px;
             height: auto;
             padding: 3vh 3vw;
-            border: $aqua solid .1em;
+            border: map-get($map:$palette, $key:'aqua') solid .1em;
             border-radius: 3%;
             display: flex;
             flex-direction: column;
@@ -48,11 +40,11 @@
                     transition: transform 1s;
                     cursor: pointer;
                 }
-                @media (min-width: 768px){
+                @include medias (tablet){
                     width: 30vw;
                     max-width: 300px;
                 }
-                @media (min-width: 1024px){
+                @include medias (desktop){
                     width: 15vw;
                 }     
             }
@@ -64,10 +56,10 @@
                 text-align: center;
                 height: 55px;
             }
-            @media (min-width: 768px){
+            @include medias (tablet){
                 width: 45%;
             }
-            @media (min-width: 1024px){
+            @include medias (desktop){
                 width: 30%;
                 margin-right: 1.5vw;
             }
@@ -83,25 +75,25 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            @media (min-width: 768px){
+            @include medias (tablet){
                 width: 45%;
             }
-            @media (min-width: 1024px){
+            @include medias (desktop){
                 width: 30%;
                 margin-right: 1.5vw;
             }   
         }
-        @media (min-width: 768px){
+        @include medias (tablet){
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
             flex-wrap: wrap;
         }
-        @media (min-width: 1024px){
+        @include medias (desktop){
             justify-content: center;
         }
     }
-    @media (min-width: 1024px){
+    @include medias (desktop){
         grid-template-columns: 20% 80%;
         grid-template-areas:
         "filters products";

@@ -12,7 +12,7 @@
         grid-area: nosimg;
         width: 70vw;
         height: auto;
-        @media (min-width: 1024px){
+        @include medias (desktop){
             width: 90%;
             height: auto;
             padding-left: 1.5vw;
@@ -27,7 +27,7 @@
     .nosotros__article{
         width: 85%;
     }
-    @media (min-width: 1024px){
+    @include medias (desktop){
         grid-template-columns: 1fr 2fr;
         grid-template-rows: auto;
         grid-template-areas:
