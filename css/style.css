@@ -27,28 +27,28 @@
     height: 11vh;
   }
 }
-#nav .nav__item:hover {
+#nav .nav-item:hover {
   animation-name: animateNavLinks;
   animation-duration: 0.5s;
-  background: linear-gradient(rgb(52, 103, 39), rgb(52, 103, 39));
+  background: linear-gradient(to top, rgb(52, 103, 39), rgb(52, 103, 39));
   background-position: 0 80%;
   background-repeat: no-repeat;
   color: rgb(52, 103, 39);
   background-size: 100% 2px;
 }
-#nav .nav__item a {
+#nav .nav-item a {
   color: rgb(52, 103, 39);
 }
 
 @keyframes animateNavLinks {
   0% {
-    background: linear-gradient(rgb(52, 103, 39), rgb(52, 103, 39));
+    background: linear-gradient(to top, rgb(52, 103, 39), rgb(52, 103, 39));
     background-position: 0 80%;
     background-repeat: no-repeat;
     background-size: 0% 2px;
   }
   100% {
-    background: linear-gradient(rgb(52, 103, 39), rgb(52, 103, 39));
+    background: linear-gradient(to top, rgb(52, 103, 39), rgb(52, 103, 39));
     background-position: 0 80%;
     background-repeat: no-repeat;
     background-size: 100% 2px;

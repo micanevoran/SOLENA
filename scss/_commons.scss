@@ -44,33 +44,33 @@
             height: 11vh;
         }
     }
-        .nav__item{
-            &:hover{
-                animation-name: animateNavLinks;
-                animation-duration: 0.5s;
-                background: linear-gradient(map-get($map:$palette, $key:'darkGreen'),map-get($map:$palette, $key:'darkGreen'));
-                background-position: 0 80%; 
-                background-repeat: no-repeat; 
-                color: map-get($map:$palette, $key:'darkGreen');
-                background-size: 100% 2px
-            }
-            a{
-                color: map-get($map:$palette, $key:'darkGreen');
-            }
+    .nav-item{
+        &:hover{
+            animation-name: animateNavLinks;
+            animation-duration: 0.5s;
+            background: linear-gradient(to top, map-get($map:$palette, $key:'darkGreen'), map-get($map:$palette, $key:'darkGreen'));
+            background-position: 0 80%; 
+            background-repeat: no-repeat; 
+            color: map-get($map:$palette, $key:'darkGreen');
+            background-size: 100% 2px;
+        }
+        a{
+            color: map-get($map:$palette, $key:'darkGreen');
+        }
         }
 }
 @keyframes animateNavLinks{
     0%{
-        background: linear-gradient(map-get($map:$palette, $key:'darkGreen'),map-get($map:$palette, $key:'darkGreen')); 
+        background: linear-gradient(to top, map-get($map:$palette, $key:'darkGreen'), map-get($map:$palette, $key:'darkGreen')); 
         background-position: 0 80%; 
         background-repeat: no-repeat; 
-        background-size: 0% 2px
+        background-size: 0% 2px;
     }
     100%{
-        background: linear-gradient(map-get($map:$palette, $key:'darkGreen'),map-get($map:$palette, $key:'darkGreen')); 
+        background: linear-gradient(to top, map-get($map:$palette, $key:'darkGreen'), map-get($map:$palette, $key:'darkGreen')); 
         background-position: 0 80%; 
         background-repeat: no-repeat; 
-        background-size: 100% 2px
+        background-size: 100% 2px;
     }
 }
 h1,h2,h3,h4,h5,h6{
