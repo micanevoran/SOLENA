@@ -2,9 +2,15 @@
     width: 30vw;
     height: auto;
     border: none;
-    font-size: 1rem;
+    .card-title{
+        font-size: 1rem;
+        @include medias (tablet){
+            font-size: 1.2rem;
+        }
+    }
     img{
         max-width: 230px;
+        height: auto;
     }
     .card__productlines--btn{
         @extend .button;
@@ -16,9 +22,6 @@
         @include medias (tablet){
             font-size: 1.2rem;
         }
-    }
-    @include medias (tablet){
-        font-size: 1.2rem;
     }
 }
 .clients__div{
