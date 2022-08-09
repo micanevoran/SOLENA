@@ -99,14 +99,6 @@ a {
   border: none;
   font-size: 1rem;
 }
-.index__productlines--card h5 {
-  max-width: 131px;
-}
-@media (min-width: 1024px) {
-  .index__productlines--card h5 {
-    max-width: 178px;
-  }
-}
 .index__productlines--card img {
   max-width: 230px;
 }
