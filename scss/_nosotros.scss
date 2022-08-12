@@ -8,6 +8,12 @@
     "servprod";
     justify-items: center;
     align-items: center;
+    h2{
+        font-size: 1.3rem;
+        @include medias (desktop){
+            font-size: 1.5rem;
+        }
+    }
     #NosImg{
         grid-area: nosimg;
         width: 70vw;

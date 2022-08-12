@@ -17,19 +17,21 @@
   background-color: rgba(136, 180, 164, 0.9);
   font-family: "Nunito", sans-serif;
   font-weight: 400;
-  font-size: 1.5rem;
-}
-@media (min-width: 1024px) {
-  #nav {
-    font-size: 1.7rem;
-  }
 }
 #nav .nav__logo {
   height: 7vh;
 }
 @media (min-width: 768px) {
   #nav .nav__logo {
-    height: 11vh;
+    height: 9vh;
+  }
+}
+#nav .nav-item {
+  font-size: 1.1rem;
+}
+@media (min-width: 1024px) {
+  #nav .nav-item {
+    font-size: 1.3rem;
   }
 }
 #nav .nav-item:hover {
@@ -76,6 +78,30 @@ a {
   text-decoration: none;
 }
 
+.banner {
+  background-image: url(../img/banner.webp);
+  background-size: cover;
+  height: 20vh;
+}
+@media (min-width: 768px) {
+  .banner {
+    height: 23vh;
+  }
+}
+.banner h1 {
+  padding-top: 12vh;
+  font-size: 1.5rem;
+  padding-bottom: 1vh;
+  color: rgb(251, 253, 241);
+  text-shadow: -4px 4px 5px rgb(25, 25, 24);
+}
+@media (min-width: 768px) {
+  .banner h1 {
+    padding-top: 14.5vh;
+    font-size: 1.9rem;
+  }
+}
+
 #footer {
   background-color: rgba(136, 180, 164, 0.9);
   width: 100%;
@@ -93,31 +119,64 @@ a {
   opacity: 1;
 }
 
-.index__productlines--card {
-  width: 30vw;
-  height: auto;
-  border: none;
+header h1 {
+  font-size: 1.3rem;
 }
-.index__productlines--card .card-title {
+@media (min-width: 1024px) {
+  header h1 {
+    font-size: 1.7rem;
+  }
+}
+header h2 {
+  font-size: 1.1rem;
+}
+@media (min-width: 1024px) {
+  header h2 {
+    font-size: 1.5rem;
+  }
+}
+
+section h2 {
   font-size: 1rem;
 }
+@media (min-width: 1024px) {
+  section h2 {
+    font-size: 1.3rem;
+  }
+}
+
+.index__productlines--card {
+  width: 30vw;
+  border: none;
+}
+.index__productlines--card h5 {
+  font-size: 0.8rem;
+}
 @media (min-width: 768px) {
-  .index__productlines--card .card-title {
+  .index__productlines--card h5 {
     font-size: 1.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .index__productlines--card h5 {
+    font-size: 1.3rem;
   }
 }
 .index__productlines--card img {
   max-width: 230px;
-  height: auto;
 }
 .index__productlines--card .card__productlines--btn {
-  height: auto;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .index__productlines--card .card__productlines--btn a {
   color: rgb(251, 253, 241);
 }
 @media (min-width: 768px) {
+  .index__productlines--card .card__productlines--btn {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
   .index__productlines--card .card__productlines--btn {
     font-size: 1.2rem;
   }
@@ -147,6 +206,14 @@ a {
   grid-template-areas: "nosimg" "historia" "servprod";
   justify-items: center;
   align-items: center;
+}
+.structure__nosotros h2 {
+  font-size: 1.3rem;
+}
+@media (min-width: 1024px) {
+  .structure__nosotros h2 {
+    font-size: 1.5rem;
+  }
 }
 .structure__nosotros #NosImg {
   grid-area: nosimg;
