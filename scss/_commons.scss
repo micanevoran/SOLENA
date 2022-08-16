@@ -44,9 +44,9 @@
     font-family: $mainFont;
     font-weight: $textRegular;
     .nav__logo{
-        height: 7vh;
+        height: 6vh;
         @include medias (tablet){
-            height: 9vh;
+            height: 8vh;
         }
     }
     .nav-item{
@@ -85,7 +85,7 @@
 h1,h2,h3,h4,h5,h6{
     text-align: center;
     font-family: $titleFont;
-    font-weight:$textSemiBold;
+    font-weight:$textRegular;
     color:map-get($map:$palette, $key:'blue');
 }
 p{
@@ -118,10 +118,11 @@ a{
 #footer{
     background-color: map-get($map:$palette, $key:'mainBg');
     width: 100%;
-    height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 6vh;
+    @include display-flex(row, center, center);
+    @include medias (tablet){
+        height: 9vh;
+    }
     .footer__icon{
         height: 4vh;
         opacity: 0.8;
@@ -130,7 +131,7 @@ a{
             opacity: 1;
         }
         @include medias (tablet){
-            height: 7vh;
+            height: 6vh;
         }
     }
 }

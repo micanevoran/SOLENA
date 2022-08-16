@@ -15,8 +15,7 @@
             font-family: $mainFont;
             font-size: 1rem;
             font-weight: $textLight;
-            display: flex;
-            flex-direction: column;
+            @include display-flex(column, stretch, stretch);
             label{
                 font-size: 1.1rem;
                 color:map-get($map:$palette, $key:'darkBlue');  
@@ -37,9 +36,7 @@
     }    
     #Datos{
         grid-area: datos;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include display-flex(column, stretch, center);
         iframe{
             width: 80vw;
             height: 300px;
@@ -49,10 +46,7 @@
             }
         }
         div{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @include display-flex(column, center, center);
             img{
                 width: 5vw;
                 max-width: 30px;

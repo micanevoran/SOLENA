@@ -18,9 +18,7 @@
     }
     #ProdList{
         grid-area: products;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include display-flex(column, stretch, center);
         .products__figure{
             width: 90%;
             max-width: 400px;
@@ -28,10 +26,7 @@
             padding: 3vh 3vw;
             border: map-get($map:$palette, $key:'aqua') solid .1em;
             border-radius: 3%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @include display-flex(column, center, center);
             img{
                 width: 50vw;
                 max-width: 300px;
@@ -71,10 +66,7 @@
             padding: 3vh 3vw;
             border: none;
             border-radius: 3%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            @include display-flex(column, center, center);
             @include medias (tablet){
                 width: 45%;
             }
@@ -84,9 +76,7 @@
             }   
         }
         @include medias (tablet){
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
+            @include display-flex(row, space-around, center);
             flex-wrap: wrap;
         }
         @include medias (desktop){
