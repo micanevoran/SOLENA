@@ -5,6 +5,9 @@
     grid-template-areas: 
     "form"
     "datos";
+    h3{
+        font-size: 1.3rem;
+    }
     #Form{
         grid-area: form;
         form{
@@ -14,6 +17,14 @@
             font-weight: $textLight;
             display: flex;
             flex-direction: column;
+            label{
+                font-size: 1.1rem;
+                color:map-get($map:$palette, $key:'darkBlue');  
+            }
+            legend{
+                font-size: 1.3rem;
+                color:map-get($map:$palette, $key:'darkBlue');
+            }
             button{
                 @extend .button;
                 align-self: center;
@@ -46,6 +57,9 @@
                 width: 5vw;
                 max-width: 30px;
                 margin-bottom: .5vh;
+            }
+            p{
+                font-size: 1.2rem;
             }
             @include medias (tablet){
                 flex-direction: row;

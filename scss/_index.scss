@@ -19,47 +19,54 @@ section{
             font-size: 1.3rem;
         }
     }
-}
-.index__productlines--card{
-    width: 30vw;
-    border: none;
-    h5{
-        font-size: 0.8rem;
-        @include medias (tablet){
-            font-size: 1.2rem;
+    .index__productlines--figure{
+        width: 35vw;
+        height: auto;
+        border: none;
+        @include display-flex (column, center, center);
+        img{
+            width: 60%;
+            height: auto;
+            max-width: 230px;
+            margin-bottom: 2vh;
+        }
+        figcaption{
+            font-family: $mainFont;
+            font-size: 0.8rem;
+            @include medias (tablet){
+                font-size: 1.2rem;
+            }
+            @include medias (desktop){
+                font-size: 1.3rem;
+            }
+        }
+        .productlines--btn{
+            @extend .button;
+            font-size: 0.8rem;
+            padding: 0.4rem 0.1rem;
+            a{
+                color: map-get($map:$palette, $key:'white');
+            }
+            @include medias (tablet){
+                font-size: 1rem;
+            }
+            @include medias (desktop){
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .clients__div{
+        width: 30%;
+        .clients__logos{
+            filter: grayscale(100%);
+            &:hover{
+                filter: grayscale(0%);
+                transition: filter 2s;
+                cursor: pointer;
+            }
         }
         @include medias (desktop){
-            font-size: 1.3rem;
+            width: 15%;
         }
-    }
-    img{
-        max-width: 230px;
-    }
-    .card__productlines--btn{
-        @extend .button;
-        font-size: 0.8rem;
-        a{
-            color: map-get($map:$palette, $key:'white');
-        }
-        @include medias (tablet){
-            font-size: 1rem;
-        }
-        @include medias (desktop){
-            font-size: 1.2rem;
-        }
-    }
-}
-.clients__div{
-    width: 30%;
-    .clients__logos{
-        filter: grayscale(100%);
-        &:hover{
-            filter: grayscale(0%);
-            transition: filter 2s;
-            cursor: pointer;
-        }
-    }
-    @include medias (desktop){
-        width: 15%;
     }
 }

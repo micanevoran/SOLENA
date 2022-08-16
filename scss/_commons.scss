@@ -16,6 +16,12 @@
         }
     }
 }
+@mixin display-flex ($direction, $justify-content, $align-items){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
 
 //botones - clase base
 .button{
@@ -44,9 +50,9 @@
         }
     }
     .nav-item{
-        font-size: 1.1rem;
-        @include medias(desktop){
-            font-size: 1.3rem;
+        font-size: 0.8rem;
+        @include medias(tablet){
+            font-size: 1rem;
         }
         &:hover{
             animation-name: animateNavLinks;
@@ -117,11 +123,14 @@ a{
     justify-content: center;
     align-items: center;
     .footer__icon{
-        height: 7vh;
+        height: 4vh;
         opacity: 0.8;
         margin-right: 0.8vw;
         &:hover{
             opacity: 1;
+        }
+        @include medias (tablet){
+            height: 7vh;
         }
     }
 }

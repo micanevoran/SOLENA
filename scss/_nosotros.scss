@@ -14,6 +14,13 @@
             font-size: 1.5rem;
         }
     }
+    p{
+        font-size: 1rem;
+        text-align: justify;
+        @include medias (desktop){
+            font-size: 1.1rem;
+        }
+    }
     #NosImg{
         grid-area: nosimg;
         width: 70vw;
