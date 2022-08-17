@@ -32,6 +32,7 @@ section{
         }
         figcaption{
             font-family: $mainFont;
+            color:map-get($map:$palette, $key:'darkBlue');
             font-size: 0.8rem;
             @include medias (tablet){
                 font-size: 1.2rem;

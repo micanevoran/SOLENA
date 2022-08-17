@@ -172,6 +172,7 @@ section .index__productlines--figure img {
 }
 section .index__productlines--figure figcaption {
   font-family: "Nunito", sans-serif;
+  color: rgb(2, 36, 64);
   font-size: 0.8rem;
 }
 @media (min-width: 768px) {
