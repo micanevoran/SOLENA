@@ -22,6 +22,17 @@
     justify-content: $justify-content;
     align-items: $align-items;
 }
+@mixin font-size ($fs1,$fs2,$fs3){
+    @include medias (mobile){
+        font-size: $fs1;
+    }
+    @include medias (tablet){
+        font-size: $fs2;
+    }
+    @include medias (desktop){
+        font-size: $fs3;
+    }
+}
 
 //botones - clase base
 .button{
@@ -50,10 +61,7 @@
         }
     }
     .nav-item{
-        font-size: 0.8rem;
-        @include medias(tablet){
-            font-size: 1rem;
-        }
+        @include font-size(0.8rem,1rem,1rem);
         &:hover{
             animation-name: animateNavLinks;
             animation-duration: 0.5s;
@@ -105,13 +113,12 @@ a{
     }
     h1{
         padding-top: 12vh;
-        font-size: 1.5rem;
+        @include font-size(1.5rem,1.9rem,1.9rem);
         padding-bottom: 1vh;
         color: map-get($map:$palette, $key:'white');
         text-shadow:  -4px 4px 5px map-get($map:$palette, $key:'black');
         @include medias(tablet){
             padding-top: 14.5vh;
-            font-size: 1.9rem;
         }
     }
 }
@@ -144,16 +151,10 @@ a{
     background-size: cover;
     @include display-flex(column, flex-end, center);
     h1{
-        font-size: 1.2rem;
-        @include medias(tablet){
-            font-size: 2rem;
-        }
+        @include font-size(1.2rem,2rem,2rem);
     }
     h2{
-        font-size: 1rem;
-        @include medias(tablet){
-            font-size: 1.5rem;
-        }
+        @include font-size(1rem,1.5rem,1.5rem);
     }     
     .error__text{
         font-family: $mainFont;
@@ -162,12 +163,9 @@ a{
     }
     .error__button{
         @extend .button;
-        font-size: 1rem;
+        @include font-size(1rem,1.5rem,1.5rem);
         padding: 1vh 1vw;
         margin-top: 2vh;
         margin-bottom: 5vh;
-        @include medias(tablet){
-            font-size: 1.5rem;
-        }
     }
 }

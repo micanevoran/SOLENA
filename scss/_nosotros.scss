@@ -9,17 +9,11 @@
     justify-items: center;
     align-items: center;
     h2{
-        font-size: 1.3rem;
-        @include medias (desktop){
-            font-size: 1.5rem;
-        }
+        @include font-size(1.3rem,1.3rem,1.5rem);
     }
     p{
-        font-size: 1rem;
+        @include font-size(1rem,1rem,1.1rem);
         text-align: justify;
-        @include medias (desktop){
-            font-size: 1.1rem;
-        }
     }
     #NosImg{
         grid-area: nosimg;
