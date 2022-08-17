@@ -151,18 +151,18 @@ a {
 }
 
 #error {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: start;
   align-items: center;
 }
 #error img {
-  width: 70vw;
-  max-width: 340px;
+  width: 65vw;
+  max-width: 320px;
 }
 #error h1 {
-  margin-top: 3vh;
+  margin-top: 2vh;
 }
 @media (min-width: 320px) {
   #error h1 {
