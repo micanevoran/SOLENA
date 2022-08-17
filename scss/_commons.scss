@@ -144,26 +144,26 @@ a{
 }
 #error{
     height: 100vh;
-    background-image: url(../img/error.gif);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
     @include display-flex(column, flex-end, center);
+    img{
+        width: 70vw;
+        max-width: 340px;
+    }
     h1{
-        @include font-size(1.2rem,2rem,2rem);
+        margin-top: 3vh;
+        @include font-size(1.2rem,1.5rem,1.5rem);
     }
     h2{
-        @include font-size(1rem,1.5rem,1.5rem);
+        @include font-size(1rem,1.3rem,1.3rem);
     }     
     .error__text{
         font-family: $mainFont;
-        color: map-get($map:$palette, $key:'white');
+        color: map-get($map:$palette, $key:'darkBlue');
         font-weight: $textBold;
     }
     .error__button{
         @extend .button;
-        @include font-size(1rem,1.5rem,1.5rem);
+        @include font-size(1rem,1.3rem,1.3rem);
         padding: 1vh 1vw;
         margin-top: 2vh;
         margin-bottom: 5vh;
