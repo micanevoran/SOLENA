@@ -143,7 +143,7 @@ a{
     background-size: cover;
     main{
         height: 100vh;
-        @include display-flex(column, end, center);
+        @include display-flex(column, flex-end, center);
         h1{
             font-size: 1.2rem;
             @include medias(tablet){
