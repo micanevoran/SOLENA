@@ -315,7 +315,7 @@ section .index__productlines--figure .productlines--btn {
 }
 @media (min-width: 1024px) {
   section .index__productlines--figure .productlines--btn {
-    font-size: 12rem;
+    font-size: 1.2rem;
   }
 }
 section .index__productlines--figure .productlines--btn a {
