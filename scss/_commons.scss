@@ -135,3 +135,22 @@ a{
         }
     }
 }
+#error{
+    background-image: url(../img/error.gif);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    @include display-flex(column, end, center);
+    .error__text{
+        font-family: $mainFont;
+        color: map-get($map:$palette, $key:'white');
+        font-weight: $textBold;
+    }
+    .error__button{
+        @extend .button;
+        font-size: 1.5rem;
+        padding: 1vh 1vw;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+    }
+}

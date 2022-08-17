@@ -27,6 +27,9 @@
             button{
                 @extend .button;
                 align-self: center;
+                a{
+                    color:map-get($map:$palette, $key:'white');
+                }
             }
             @include medias (tablet){
                 max-width: 600px;
