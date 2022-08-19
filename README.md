@@ -8,6 +8,7 @@ Solena SAS es una empresa que ofrece soluciones energéticas ambientales de mane
 Este proyecto me entusiasma particularmente por dos razones: por un lado, es mi primer proyecto de Desarrollo Web y, por otro lado, porque se trata del emprendimiento de mi familia.
 
 El sitio consta de 5 páginas (Index, Nosotros, Productos, Galería y Contacto) y tiene un diseño totalmente responsive. 
+![yop (2)](https://user-images.githubusercontent.com/109108369/185523545-64dac0a7-d872-4bc4-acd7-4fa26155300e.jpg)
 
 
 ## Links
@@ -66,7 +67,7 @@ En la página de contacto hay un formulario de contacto, que aún no funciona, y
 
 Para el formulario se utilizaron recursos de BOOTSTRAP. 
 
-:exclamation:**Bonus Track**: Al hacer click en el boton *Enviar* de la página de contacto, se redirecciona la página a una página personalizada de *ERROR 404*
+:exclamation:**Bonus Track**: Al hacer click en el boton *Enviar* de la página de contacto, se redirecciona a una página personalizada de *ERROR 404*
 
 
 ## Consideraciones tenidas en cuenta para SEO y Optimización del Sitio
@@ -95,9 +96,22 @@ Para el formulario se utilizaron recursos de BOOTSTRAP.
 
 ### Mixins
 
+* Un mixin para los breakpoints para mobile(320px), tablet (768px) y desktop (1024px).
 
+* Un mixin para *display: flex* con los parámetros ajustables de *flex-direction*, *justify-content* y *align items*
 
+* Un mixin para ajustar el tamaño de la fuente en los distintos breakpoints con los parámetros ajustables *font-size en resolución mobile*, *font-size en resolución tablet* y *font-size en resolución desktop*. Novedad: para definir este mixin, llamé al mixin de los breakpoints. 
 
+# Reporte de errores
 
+Si encontraras algún error en mi código y quisieras hacérmelo saber, puedes hacerlo a mi casilla de correo electrónico micanevoran@hotmail.com
 
+# Sobre mí
 
+![Fotografía de la autora: Ana Micaela Nevoran](https://user-images.githubusercontent.com/109108369/185523663-5512b69b-b84e-45ea-9419-6824cbc0af6f.jpg)
+
+Mi nombre es **Micaela Nevoran** y soy Ingeniera Industrial egresada de la Universidad de Buenos Aires.
+
+Actualmente me encuentro cursando la carrera de Front-end en Coder House, habiendo finalizado el curso de Diseño Web, JavaScript en proceso y, próximamente, React. 
+
+Te dejo mi perfil de LinkedIn, por si quisieras conectar conmigo: https://www.linkedin.com/in/micaela-nevoran-79a06458/ 
