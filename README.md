@@ -66,7 +66,7 @@ En la página de contacto hay un formulario de contacto, que aún no funciona, y
 
 Para el formulario se utilizaron recursos de BOOTSTRAP. 
 
-:exclamation:**Bonus Track**: Al hacer click en el boton *Enviar* de la página de contacto, se redirecciona a una página personalizada de *ERROR 404*
+ :star:**Bonus Track**: Al hacer click en el boton *Enviar* de la página de contacto, se redirecciona a una página personalizada de *ERROR 404*
 
 
 ## Consideraciones tenidas en cuenta para SEO y Optimización del Sitio
