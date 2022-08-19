@@ -8,7 +8,6 @@ Solena SAS es una empresa que ofrece soluciones energéticas ambientales de mane
 Este proyecto me entusiasma particularmente por dos razones: por un lado, es mi primer proyecto de Desarrollo Web y, por otro lado, porque se trata del emprendimiento de mi familia.
 
 El sitio consta de 5 páginas (Index, Nosotros, Productos, Galería y Contacto) y tiene un diseño totalmente responsive. 
-![yop (2)](https://user-images.githubusercontent.com/109108369/185523545-64dac0a7-d872-4bc4-acd7-4fa26155300e.jpg)
 
 
 ## Links
@@ -102,9 +101,11 @@ Para el formulario se utilizaron recursos de BOOTSTRAP.
 
 * Un mixin para ajustar el tamaño de la fuente en los distintos breakpoints con los parámetros ajustables *font-size en resolución mobile*, *font-size en resolución tablet* y *font-size en resolución desktop*. Novedad: para definir este mixin, llamé al mixin de los breakpoints. 
 
+
 # Reporte de errores
 
 Si encontraras algún error en mi código y quisieras hacérmelo saber, puedes hacerlo a mi casilla de correo electrónico micanevoran@hotmail.com
+
 
 # Sobre mí
 
