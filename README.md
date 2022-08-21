@@ -16,7 +16,7 @@ El sitio consta de 5 páginas (Index, Nosotros, Productos, Galería y Contacto),
 
 * Link a Pages de Github: https://micanevoran.github.io/SOLENA/
 
-* Link a Host Gratuito (Netifly): https://www.solena.ar/
+* Link a Host Gratuito (Netlify): https://www.solena.ar/
 
 
 ## Tecnologías Utilizadas:
