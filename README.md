@@ -40,7 +40,9 @@ El sitio consta de 5 páginas (Index, Nosotros, Productos, Galería y Contacto),
 
 ### INDEX
 
-Aquí el objetivo fue dar un primer pantallazo general de la empresa. Primero un *header* con un carrousel de fotos alusivas (recurso tomado de BOOTSTRAP) y un heading *h1* con el nombre de la Empresa.
+Aquí el objetivo fue dar un pantallazo general de la empresa. 
+
+Primero un *header* con un carrousel de fotos alusivas (recurso tomado de BOOTSTRAP) y un heading *h1* con el nombre de la Empresa.
 
 Luego, la presentación de las dos líneas de productos con las que cuenta la empresa. La idea es que al hacer click en los botones, redireccione a la sección de productos, con el filtro correspondiente a la línea a la que se está accediendo. Por el momento, ante mi desconocimiento en JavaScript, los botones redireccionan a la página de los productos sin aplicación de filtros. 
 
