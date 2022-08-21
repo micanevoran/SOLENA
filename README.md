@@ -119,4 +119,4 @@ Mi nombre es **Micaela Nevoran** y soy Ingeniera Industrial egresada de la Unive
 
 Actualmente me encuentro cursando la carrera de Front-end en Coder House, habiendo finalizado el curso de Diseño Web, JavaScript en proceso y, próximamente, React. 
 
-Te dejo mi perfil de LinkedIn, por si quisieras conectar conmigo: https://www.linkedin.com/in/micaela-nevoran-79a06458/ 
+Te dejo mi perfil de LinkedIn, por si quisieras conectar conmigo: https://www.linkedin.com/in/micanevoran/. 
