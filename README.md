@@ -81,7 +81,7 @@ Para el formulario se utilizaron recursos de BOOTSTRAP.
 
 * Amplio uso de etiquetas semánticas en todas las páginas.
 
-* Optimización de todas las imágenes del sitio, balanceando la calidad deseada con el menor peso posible. Utilización de imágenes en formato *.svg* en todos los casos que fue posible (logo de la empresa, íconos).
+* Optimización de todas las imágenes del sitio, balanceando la calidad deseada con el menor peso posible. Utilización de imágenes en formato *.svg* en todos los casos que fue posible (logo de la empresa, íconos), y transformación a formato *.webp* de las imágenes que originalmente estaban en formato *.jpg*
 
 ## Recursos SASS utilizados para Optimización del Código
 
