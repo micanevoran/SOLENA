@@ -22,7 +22,7 @@
     justify-content: $justify-content;
     align-items: $align-items;
 }
-@mixin font-size ($fs1,$fs2,$fs3){
+@mixin font-size ($fs1, $fs2, $fs3){
     @include medias (mobile){
         font-size: $fs1;
     }
@@ -151,10 +151,10 @@ a{
     }
     h1{
         margin-top: 2vh;
-        @include font-size(1.2rem,1.5rem,1.5rem);
+        @include font-size(1.2rem, 1.5rem, 1.5rem);
     }
     h2{
-        @include font-size(1rem,1.3rem,1.3rem);
+        @include font-size(1rem, 1.3rem, 1.3rem);
     }     
     .error__text{
         font-family: $mainFont;
@@ -163,7 +163,7 @@ a{
     }
     .error__button{
         @extend .button;
-        @include font-size(1rem,1.3rem,1.3rem);
+        @include font-size(1rem, 1.3rem, 1.3rem);
         padding: 1vh 1vw;
         margin-top: 2vh;
         margin-bottom: 5vh;

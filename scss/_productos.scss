@@ -24,7 +24,7 @@
             max-width: 400px;
             height: auto;
             padding: 3vh 3vw;
-            border: map-get($map:$palette, $key:'aqua') solid .1em;
+            border: map-get($map:$palette, $key:'aqua') solid 0.1em;
             border-radius: 3%;
             @include display-flex(column, center, center);
             img{

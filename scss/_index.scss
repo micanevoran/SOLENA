@@ -1,14 +1,14 @@
 header{
     h1{
-        @include font-size(1.3rem,1.3rem,1.7rem);
+        @include font-size(1.3rem, 1.3rem, 1.7rem);
     }
     h2{
-        @include font-size(1.1rem,1.1rem,1.5rem);
+        @include font-size(1.1rem, .1rem, 1.5rem);
     }
 }
 section{
     h3{
-        @include font-size(1rem,1rem,1.3rem);
+        @include font-size(1rem, 1rem, 1.3rem);
     }
     .index__productlines--figure{
         width: 35vw;
@@ -24,11 +24,11 @@ section{
         figcaption{
             font-family: $mainFont;
             color:map-get($map:$palette, $key:'darkBlue');
-            @include font-size(0.8rem,1.2rem,1.3rem);
+            @include font-size(0.8rem, 1.2rem, 1.3rem);
         }
         .productlines--btn{
             @extend .button;
-            @include font-size(0.8rem,1rem,1.2rem);
+            @include font-size(0.8rem, 1rem, 1.2rem);
             padding: 0.4rem 0.1rem;
             a{
                 color: map-get($map:$palette, $key:'white');
